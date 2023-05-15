@@ -21,11 +21,15 @@ h1 {
     font-family: Georgia;
     font-size: 30px;
     color: rgb(246, 247, 213);
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     font-family: Georgia;
-    font-size: 26px;
+    font-size: 24px;
     color: rgb(216, 51, 238);
     display: flex;
     justify-content: center;
@@ -33,27 +37,37 @@ h2 {
 
 h3 {
     font-family: Georgia;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
     color: rgb(216, 51, 238);
-    display: flex;
-    justify-content: center;
-}
-
-.first {
-    background-image: url(/image/balloon-3\ \(1\).png);
-}
-
-.container {
-    min-width: 320px;
-    max-width: 580px;
+    display: block;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
+.first {
+    background-image: url(./image/balloon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    width: 100%;
+    padding-top: 20px;
+
+}
+
+.container {
+    min-width: 320px;
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .button-order {
     border: none;
-    background-color: rgb(255, 0, 128);
+    background-color: #c196dc;
     color: white;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px #00000026;
@@ -96,10 +110,11 @@ h3 {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: whitesmoke;
+    border: 1px solid wheat;
     cursor: pointer;
     border: 1px rgba(0, 0, 0, 0.1);
-    fill: currentColor;
+    fill: black;
     transition-property: color;
     transition-timing-function: 250ms;
     transition-duration: 250ms;
@@ -112,6 +127,11 @@ h3 {
     border-radius: 24px;
     margin-left: 8px;
     margin-right: 8px;
+}
+
+.foto-we {
+    position: relative;
+    width: 100%;
 }
 
 p {

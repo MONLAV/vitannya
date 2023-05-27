@@ -90,12 +90,13 @@ h3 {
     height: 300px;
 }
 
+/* 
 .swiper-slide-list {
     display: flex;
     transition-property: transform;
     transform: translate3d(-1200px 0px 0px);
     transition-duration: 500ms;
-}
+} */
 
 .modal {
     position: absolute;

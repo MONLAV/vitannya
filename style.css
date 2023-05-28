@@ -63,17 +63,45 @@ h3 {
 
 }
 
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.65);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
 .button-order {
     border: none;
-    background-color: #c196dc;
+    background: linear-gradient(226deg, #85cef8 0%, #f365c4 80%);
     color: white;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px #00000026;
-    min-width: 169px;
-    height: 56px;
+    border-radius: 500px;
+    box-shadow: 4px 4px 4px 0px #00000060;
+    min-width: 120px;
+    height: 120px;
     font-family: Georgia;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
@@ -81,22 +109,10 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     transition-property: background-color, color;
-    transition-timing-function: var(--animation-fast);
-    transition-duration: var(--duration);
-}
-
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-
-/* 
-.swiper-slide-list {
-    display: flex;
-    transition-property: transform;
-    transform: translate3d(-1200px 0px 0px);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 500ms;
-} */
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
 
 .modal {
     position: absolute;
